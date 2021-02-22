@@ -1,0 +1,128 @@
+body {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.fullpage {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+}
+.slide-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center bottom;
+}
+
+/* global */
+.letter {
+    display: inline-block;
+}
+
+/* #slide-1 */
+#slide-1 {
+    position: relative;
+}
+#car-1 {
+    background-image: url('../images/car-1.jpg');
+    opacity: 0;
+}
+.brand {
+    position: absolute;
+    top: 0;
+    min-width: 100%;
+    height: 40%;
+    box-sizing: border-box;
+}
+.logo {
+    text-transform: uppercase;
+    font-size: 2.4em;
+    opacity: 0;
+}
+.tagline {
+    text-transform: uppercase;
+    font-size: .8em;
+    letter-spacing: 4px;
+    color: #999;
+}
+.tagline .letter {
+    opacity: 0
+}
+
+/* #slide-2 */
+#slide-2 {
+    position: relative;
+    height: auto;
+    min-height: 100vh;
+    background-image: url('../images/car-2.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center bottom;
+}
+#car-2 {
+
+}
+#story {
+    width: 40%;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0, 0.6);
+    opacity: 0;
+    color: #999;
+}
+#story h2 {
+    font-family: 'Nunito Sans', sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+/* #slide-3 */
+#slide-3 {
+    position: relative;
+    background-image: url('../images/car-3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    overflow: hidden;
+}
+#tint-specs {
+    box-sizing: border-box;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#tint-specs div {
+    /* margin: 10px 0; */
+}
+#tint-specs a {
+    display: inline-block;
+    padding: 5px 15px;
+    margin: 5px 0;
+    background-color: rgba(0,0,0, 0.8);
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: #888;
+    text-decoration: none;
+    transition: all ease-in-out .3s;
+}
+#tint-specs a:hover {
+    text-indent: 10px;
+    color: #fff;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 575.98px) {
+    #slide-2 #story {
+        width: 80%;
+    }
+
+    #slide-3 #tint-specs a {
+        font-size: 1.2rem;
+    }
+}

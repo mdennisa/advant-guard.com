@@ -118,10 +118,19 @@ body {
 
 /* RESPONSIVE */
 @media (max-width: 575.98px) {
+    .slide-bg {
+        background-attachment: scroll;
+    }
+    #slide-2 {
+        background-attachment: scroll;
+    }
     #slide-2 #story {
         width: 80%;
     }
 
+    #slide-3 {
+        background-attachment: scroll;
+    }
     #slide-3 #tint-specs a {
         font-size: 1.2rem;
     }

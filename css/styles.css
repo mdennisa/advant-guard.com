@@ -64,11 +64,8 @@ body {
     background-attachment: fixed;
     background-position: center bottom;
 }
-#car-2 {
-
-}
 #story {
-    width: 40%;
+    width: 60%;
     box-sizing: border-box;
     background-color: rgba(0,0,0, 0.6);
     opacity: 0;
@@ -96,9 +93,6 @@ body {
     margin: 0 auto;
 }
 
-#tint-specs div {
-    /* margin: 10px 0; */
-}
 #tint-specs a {
     display: inline-block;
     padding: 5px 15px;
@@ -120,12 +114,13 @@ body {
 @media (max-width: 575.98px) {
     .slide-bg {
         background-attachment: scroll;
+        background-position: center center;
     }
     #slide-2 {
         background-attachment: scroll;
     }
     #slide-2 #story {
-        width: 80%;
+        width: 100%;
     }
 
     #slide-3 {

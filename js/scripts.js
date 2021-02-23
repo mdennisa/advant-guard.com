@@ -33,18 +33,34 @@ jQuery(function($) {
     })
 
     // #slide-2
-    var anime_story = anime({
+    var tl_s2 = anime.timeline()
+    tl_s2.add({
         targets: '#story',
-        duration: 800,
+        duration: 400,
         easing: 'easeOutSine',
-        translateY: [120, 0],
+        translateX: [-100, 0],
         opacity: [0, 1]
+    })
+    .add({
+        targets: '#story h2',
+        duration: 400,
+        easing: 'easeOutExpo',
+        translateX: [-100, 0],
+        opacity: [0, 1],
+    })
+    .add({
+        targets: '#story p',
+        duration: 400,
+        easing: 'easeOutExpo',
+        translateX: [-100, 0],
+        opacity: [0, 1],
+        delay: anime.stagger(100)
     })
     var scene_2 = new ScrollMagic.Scene({
         triggerElement: '#story',
         duration: 400,
     })
-    .setAnime(anime_story)
+    .setAnime(tl_s2)
     .addTo(controller)
 
     // #slide-3

@@ -83,6 +83,24 @@ body {
     opacity: 0
 }
 
+.fancy-inline {
+    display: none;
+    width: 90%;
+}
+.fancy-inline h4 {
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #262C2D;
+}
+.fancy-inline p {
+    margin: 0 0 15px 0;
+    color: #262C2D;
+}
+.fancy-inline .fancybox-close-small {
+    color: #ccc;
+}
+
 /* #slide-2 */
 #slide-2 {
     position: relative;
@@ -105,12 +123,12 @@ body {
     background-position: center center;
     overflow: hidden;
 }
-#tint-specs {
+.specs {
     box-sizing: border-box;
     width: 80%;
 }
 
-#tint-specs a {
+.specs a {
     display: inline-block;
     padding: 5px 15px;
     margin: 10px 0 0 0;
@@ -121,7 +139,7 @@ body {
     text-decoration: none;
     transition: all ease-in-out .3s;
 }
-#tint-specs a:hover {
+.specs a:hover {
     text-indent: 10px;
     color: #fff;
 }
@@ -137,6 +155,7 @@ body {
     overflow: hidden;
 }
 #contact-us {
+    box-sizing: border-box;
     height: 100vh;
     color: #bcbcbc;
 }
@@ -175,7 +194,15 @@ body {
     }
 
     .heading-block {
-        width: 100%;
+        width: 100vw;
+        max-width: 100%;
+    }
+    .specs a {
+        font-size: 1.2rem;
+    }
+
+    .wrap-block {
+        width: 200px;
     }
 
     #slide-2 {
@@ -185,7 +212,8 @@ body {
     #slide-3 {
         background-attachment: scroll;
     }
-    #slide-3 #tint-specs a {
-        font-size: 1.2rem;
+
+    #slide-4 {
+        background-attachment: scroll;
     }
 }

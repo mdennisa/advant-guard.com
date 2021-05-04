@@ -36,14 +36,21 @@ jQuery(function($) {
     var tl_s2 = anime.timeline()
     tl_s2.add({
         targets: '#story',
-        duration: 400,
+        duration: 1000,
         easing: 'easeOutSine',
         translateY: [100, 0],
         opacity: [0, 1]
+    }).add({
+        targets: '#autofilm-specs div',
+        easing: 'easeOutExpo',
+        translateX: [100, 0],
+        opacity: [0, 1],
+        delay: anime.stagger(100)
     })
+
     var scene_2 = new ScrollMagic.Scene({
         triggerElement: '#story',
-        duration: '30%',
+        duration: '50%',
     })
     .setAnime(tl_s2)
     .addTo(controller)
@@ -52,7 +59,7 @@ jQuery(function($) {
     var tl_s3 = anime.timeline()
     tl_s3.add({
         targets: '#detailing',
-        duration: 600,
+        duration: 1000,
         easing: 'easeOutSine',
         translateY: [100, 0],
         opacity: [0, 1]
@@ -67,7 +74,7 @@ jQuery(function($) {
 
     var scene_3 = new ScrollMagic.Scene({
         triggerElement: '#slide-3',
-        duration: '40%'
+        duration: '50%'
     })
     .setAnime(tl_s3)
     .addTo(controller)
@@ -78,12 +85,13 @@ jQuery(function($) {
         targets: '#contact-us',
         duration: 600,
         easing: 'easeOutSine',
+        translateY: [200, 0],
         opacity: [0, 1]
     })
 
     var scene_4 = new ScrollMagic.Scene({
         triggerElement: '#slide-4',
-        duration: '30%'
+        duration: '50%'
     })
     .setAnime(tl_s4)
     .addTo(controller)
